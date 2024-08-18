@@ -1,0 +1,41 @@
+---
+const nav_items = [
+  { title: "Inicio", label: "Inicio", url: "/#top" },
+  { title: "Sobre mi", label: "Sobre mi", url: "/#sobre-mi" },
+  { title: "Experiencia", label: "Experiencia", url: "/#Experiencia" },
+  { title: "Proyectos", label: "Proyectos", url: "/#Proyectos" },
+  {
+    title: "Contacto",
+    label: "Contacto",
+    url: "mailto:andre.correo@udla.edu.co",
+  },
+];
+import Tema from "./Tema.astro";
+---
+
+<header class="flex justify-center items-center py-4 xl:w-[1120px] mx-auto">
+  <nav
+    class="flex px-4 text-md font-bold rounded-full text-dark-600 dark:text-black-200 justify-center items-center"
+  >
+    {
+      nav_items.map((link) => (
+        <a
+          class="relative block px-2 py-2 transition hover:text-[#007c7c] dark:hover:text-[#00baba] text-black dark:text-white "
+          aria-label={link.label}
+          href={link.url}
+        >
+          {link.title}
+        </a>
+      ))
+    }
+  </nav>
+  <Tema />
+</header>
+
+<style>
+  @media (min-width: 490px) {
+    nav {
+      flex-direction: row;
+    }
+  }
+</style>

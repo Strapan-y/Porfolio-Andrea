@@ -1,0 +1,253 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import SocialPill from "../components/SocialPill.astro";
+import LinkedIn from "../components/Icons/LinkedIn.astro";
+import Github from "../components/Icons/Github.astro";
+import Facebook from "../components/Icons/Facebook.astro";
+import Instagram from "../components/Icons/Instagram.astro";
+import Experience from "../components/Experience.astro";
+import Maleta from "../components/Icons/Maleta.astro";
+import Skill from "../components/Icons/Skill.astro";
+import Code from "../components/Icons/Code.astro";
+import Projects from "../components/Projects.astro";
+import Net from "../components/Icons/Net.astro";
+import PowerBi from "../components/Icons/Power_Bi.astro";
+import Mysql from "../components/Icons/Mysql.astro";
+import Bootstrap from "../components/Icons/Bootstrap.astro";
+import Python from "../components/Icons/Py.astro";
+import Tailwind from "../components/Icons/Tailwind.astro";
+import Server from "../components/Icons/Server.astro";
+import Excel from "../components/Icons/Excel.astro";
+import Oracle from "../components/Icons/Oracle.astro";
+import Js from "../components/Icons/Js.astro";
+import Canva from "../components/Icons/Canva.astro";
+import Postgres from "../components/Icons/Postgres.astro";
+import Qgis from "../components/Icons/Qgis.astro";
+
+
+const habilidades = [
+  {
+    name: ".Net",
+    class:
+      "bg-[#fffff] text-black dark:text-purple-400 border border-purple-400",
+    icon: Net,
+  },
+
+  {
+    name: "Bootstrap",
+    class:
+      "bg-[#fffff]  text-black dark:text-purple-400 border border-purple-400",
+    icon: Bootstrap,
+  },
+
+  {
+    name: "Python",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: Python,
+  },
+
+  {
+    name: "JavaScript",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: Js,
+  },
+
+
+  {
+    name: "Excel",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: Excel,
+  },
+
+  {
+    name: "Power Bi",
+    class: "",
+    icon: PowerBi,
+  },
+  
+  {
+    name: "Tailwind",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: Tailwind,
+  },
+  {
+    name: "Qgis",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: Qgis,
+  },
+
+
+  {
+    name: "Canva",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: Canva,
+  },
+
+  {
+    name: "Mysql",
+    class: "bg-[#fffff] text-black dark:text-blue-400 border border-blue-400",
+    icon: Mysql,
+  },
+ 
+  {
+    name: "SQL Server",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: Server,
+  },
+  {
+    name: "Oracle",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: Oracle,
+  },
+  {
+    name: "Postgres",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: Postgres,
+  },
+];
+---
+
+<Layout title="Porfolio de Andrea - Desarrollador web" description="Waos">
+  <main class="px-4">
+    <SectionContainer class="py-24 md:py-36 pb-16 md:pb-24">
+      <img
+        src="/yo.jpeg"
+        alt="Tom-photo"
+        class="rounded-full w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mb-4"
+      />
+
+      <h1
+        class="text-[#007c7c] dark:text-[#00baba] text-3xl text-pretty md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 md:pb-6 lg:pb-10"
+      >
+        Hola, Soy Andrea
+        <a
+          class="flex justify-center items-center"
+          href="https://www.linkedin.com/in/andrea-yulieth-correa-urquijo-343386303/"
+          target="a_blank"
+          rel="noopener"
+        >
+          <Badge>Disponible para trabajar</Badge>
+        </a>
+      </h1>
+      <h2
+        class="text-lg md:text-xl lg:text-2xl text-wrap max-w-[700px] text-black dark:text-white"
+      >
+        <span class="opacity" >
+          Estudiante de Ingeniería de Sistemas tengo conocimientos en
+          <span class="text-[#00baba] font-medium" >
+            HTML, CSS, JavaScript, Python, C#, .NET, SQL Server, MySQL, MongoDB,
+            Entre otros
+          </span>
+          . Mi pasión por la tecnología y el análisis de datos me motiva a buscar oportunidades para aplicar mis conocimientos y
+          contribuir al éxito de proyectos innovadores. Tengo solidos conocimientos en metodologías ágiles, con participación activa
+          en entornos Scrum.
+        </span>
+      </h2>
+      <nav class="flex gap-2 md:gap-4 mt-4 md:mt-8 flex-wrapS">
+        <SocialPill
+          href="https://www.linkedin.com/in/andrea-yulieth-correa-urquijo-343386303/"
+        >
+          <LinkedIn class="size-4 md:size-6 text-[#007c7c]" />
+          LinkedIn
+        </SocialPill>
+        <SocialPill href="https://github.com/Strapan-y">
+          <Github class="size-4 md:size-6 text-[#007c7c]" />
+          Github
+        </SocialPill>
+        <SocialPill href="https://web.facebook.com/AndreaStrappp">
+          <Facebook class="size-4 md:size-6 text-[#007c7c]" />
+          Facebook
+        </SocialPill>
+        <SocialPill href="https://www.instagram.com/andreastrappp/">
+          <Instagram class="size-4 md:size-6 text-[#007c7c]" />
+          Instagram
+        </SocialPill>
+      </nav>
+    </SectionContainer>
+
+    <SectionContainer id="Habilidades">
+      <h2
+        class="text-xl md:text-2xl font-semibold mb-10 md:mb-6 flex gap-x-2 md:gap-x-3 items-center text-black dark:text-white"
+      >
+        <Skill class="w-6 h-6 md:w-7 md:h-7" />
+        Habilidades
+      </h2>
+
+      <div class="flex flex-wrap items-center justify-center">
+        {
+          habilidades.map((hab) => (
+            <div class="skill ">
+              <hab.icon class="size-20 skill-icon" />
+              <span class="tooltip">{hab.name}</span>
+            </div>
+          ))
+        }
+      </div>
+      <style>
+        .skill {
+          position: relative;
+          display: inline-block;
+          margin: 20px;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        .skill-icon {
+          width: 60px;
+          height: 60px;
+          transition: transform 0.3s ease-in-out;
+        }
+
+        .tooltip {
+          visibility: hidden;
+          width: 80px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+          position: absolute;
+          z-index: 1;
+          bottom: -70%;
+          left: 50%;
+          margin-left: -40px;
+          opacity: 0;
+          transition: opacity 0.3s;
+        }
+
+        .skill:hover .skill-icon {
+          transform: scale(1.1);
+        }
+
+        .skill:hover .tooltip {
+          visibility: visible;
+          opacity: 1;
+        }
+      </style>
+    </SectionContainer>
+
+    <SectionContainer id="Experiencia">
+      <h2
+        class="text-xl md:text-2xl font-semibold mb-4 md:mb-6 flex gap-x-2 md:gap-x-3 items-center text-black dark:text-white"
+      >
+        <Maleta class="w-6 h-6 md:w-7 md:h-7" />
+        Experiencia laboral
+      </h2>
+      <Experience />
+    </SectionContainer>
+
+    
+
+    <SectionContainer id="Proyectos">
+      <h2
+        class="text-xl md:text-2xl font-semibold mb-4 md:mb-6 flex gap-x-2 md:gap-x-3 items-center text-black dark:text-white"
+      >
+        <Code class="w-6 h-6 md:w-7 md:h-7" />
+        Proyectos
+      </h2>
+
+      <Projects />
+    </SectionContainer>
+  </main>
+</Layout>
