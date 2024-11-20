@@ -12,6 +12,8 @@ import Link from "./Icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
 import Canva from "./Icons/Canva.astro"
 import Figma from "./Icons/Figma.astro"
+import PowerBi from "./Icons/Power_Bi.astro";
+import Excel from "./Icons/Excel.astro";
 
 const Tags = {
   Css: {
@@ -70,6 +72,18 @@ const Tags = {
     icon: Figma,
   },
 
+  Excel:{
+    name: "Excel",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: Excel,
+  },
+
+  PowerBi:{
+    name: "Excel",
+    class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
+    icon: PowerBi,
+  }
+
 };
 
 const proyectos = [
@@ -87,7 +101,7 @@ const proyectos = [
     title: "Diseño de la Pagina web para Tienda de Maquillaje",
     description:
       "Diseño de la pagina web para la Tienda de Maquillaje Strap Beauty",
-    img: "/Projects/diseniostrap.png",
+    img: "/Projects/diseniotienda.png",
     url: "https://www.figma.com/proto/xVyedYJIi7kC4qkh2UBBSd/STRAP-BEAUTY?node-id=1-220&node-type=canvas&t=tNwBtg3Qs8ZGlF7m-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
     tags: [
       Tags.Figma,
@@ -103,6 +117,19 @@ const proyectos = [
     url: "https://www.figma.com/proto/G7BQFtePGPDAekdFJDMrsk/Untitled?node-id=3-4&node-type=canvas&t=AeCmHsWwQCWmZUEx-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
     tags: [
       Tags.Figma,
+    ],
+   
+  },
+
+  {
+    title: "Dashboard para el Plan de Mejoramiento y Seguimiento",
+    description:
+      "Informe de seguimiento en el plan de Mejoramiento y Seguimiento de los grupos de Investigación",
+    img: "/Projects/planmejoramiento.png",
+    url: "https://app.powerbi.com/links/4lkzUIy3o_?ctid=64ebc78e-0a5f-44e1-a504-5713eff64b33&pbi_source=linkShare",
+    tags: [
+      Tags.PowerBi,
+      Tags.Excel,
     ],
    
   },
