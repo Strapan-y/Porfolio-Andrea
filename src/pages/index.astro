@@ -27,8 +27,6 @@ import Postgres from "../components/Icons/Postgres.astro";
 import Qgis from "../components/Icons/Qgis.astro";
 import waos from "../components/Icons/waos.astro";
 
-
-
 const habilidades = [
   {
     name: ".Net",
@@ -56,7 +54,6 @@ const habilidades = [
     icon: Js,
   },
 
-
   {
     name: "Excel",
     class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
@@ -68,7 +65,7 @@ const habilidades = [
     class: "",
     icon: PowerBi,
   },
-  
+
   {
     name: "Tailwind",
     class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
@@ -87,7 +84,6 @@ const habilidades = [
     icon: Qgis,
   },
 
-
   {
     name: "Canva",
     class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
@@ -99,7 +95,7 @@ const habilidades = [
     class: "bg-[#fffff] text-black dark:text-blue-400 border border-blue-400",
     icon: Mysql,
   },
- 
+
   {
     name: "SQL Server",
     class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
@@ -118,7 +114,7 @@ const habilidades = [
 ];
 ---
 
-<Layout title="Porfolio de Andrea - Desarrollador web" description="Waos">
+<Layout title="Portfolio de Andrea - Desarrollador web" description="strap">
   <main class="px-4">
     <SectionContainer class="py-24 md:py-36 pb-16 md:pb-24">
       <img
@@ -126,30 +122,27 @@ const habilidades = [
         alt="Tom-photo"
         class="rounded-full w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 mb-4"
       />
-
-      <h1
-        class="text-[#007c7c] dark:text-[#00baba] text-3xl text-pretty md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 md:pb-6 lg:pb-10"
-      >
+      <h1 class="text-[#00baba] dark:text-[#00baba] text-3xl text-pretty md:text-4xl lg:text-5xl font-bold flex flex-row pb-1">
         Hola, Soy Andrea
         <a
-          class="flex justify-center items-center"
+          class="flex justify-center items-center ml-[7vw]"
           href="https://www.linkedin.com/in/andrea-yulieth-correa-urquijo-343386303/"
-          target="a_blank"
+          target="_blank"
           rel="noopener"
         >
           <Badge>Disponible para trabajar</Badge>
         </a>
       </h1>
-      <h2
-        class="text-lg md:text-xl lg:text-2xl text-wrap max-w-[700px] text-black dark:text-white"
-      >
-        <span class="opacity" >
-          Estudiante de Ingeniería de Sistemas tengo conocimientos en
-          <span class="text-[#00baba] font-medium" >
-            Python, C#, Java, HTML, CSS, Power BI, SQL Server, Redes sociales y JavaScript.,
-            Entre otros
-          </span>
-          Mi pasión por la tecnología y el análisis de datos me motiva a buscar oportunidades para aplicar mis conocimientos y contribuir al éxito de proyectos innovadores. Tengo solidos conocimientos en metodologías ágiles, con participación activa en entornos Scrum, donde he demostrado mi capacidad para adaptarme, colaborar eficazmente y mantener un fuerte compromiso con los objetivos del equipo. Estoy enfocada en seguir aprendiendo y creciendo profesionalmente, listo para aportar mis habilidades en un entorno dinámico y desafiante.
+      <h2 class="text-lg md:text-xl lg:text-2xl text-wrap max-w-[700px] text-black dark:text-white">
+        <h5 class="text-[[#00baba] dark:text-[#007c7c] text-1xl text-pretty md:text-1xl lg:text-1xl font-bold flex flex-row gap-x-2 pb-4 md:pb-6 lg:pb-10"
+        >Ingeniera de Sistemas | Desarrolladora Frontend | Analista de Datos</h5>
+        <span class="opacity dark:text-[#ffffff]">
+          Desarrolladora frontend con experiencia en <span class="text-[#007c7c] dark:text-[#75d6d6] font-medium">React, JavaScript, HTML, Tailwind, CSS y C#,</span>
+          con sólidos conocimientos en <span class="text-[#007c7c] dark:text-[#75d6d6] font-medium">Python, Java, SQL Server y Power BI. </span> 
+          Apasionada por la tecnología y la innovación, busco oportunidades para
+          aplicar mis habilidades en proyectos desafiantes. Cuento con experiencia en metodologías ágiles (Scrum),
+          destacándome por mi adaptabilidad, trabajo en equipo y compromiso con los objetivos.
+          Estoy en constante aprendizaje y lista para aportar valor en entornos dinámicos y de alto impacto. 🚀
         </span>
       </h2>
       <nav class="flex gap-2 md:gap-4 mt-4 md:mt-8 flex-wrapS">
@@ -243,8 +236,6 @@ const habilidades = [
       </h2>
       <Experience />
     </SectionContainer>
-
-    
 
     <SectionContainer id="Proyectos">
       <h2

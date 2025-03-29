@@ -88,21 +88,11 @@ const Tags = {
 
 const proyectos = [
   {
-    title: "Encriptador de texto",
+    title: "Diseño de pagina web para la venta de productos agricola",
     description:
-      "Encriptador Realizado para el challenges de alura x oracle ONE",
-    img: "Projects/Encriptador.webp",
-    url: "https://encriptador-delta-five.vercel.app/",
-    tags: [Tags.Html, Tags.Css, Tags.Js],
-    github: "https://github.com/Tom21-xd/Encriptador",
-  },
-
-  {
-    title: "Diseño de la Pagina web para Tienda de Maquillaje",
-    description:
-      "Diseño de la pagina web para la Tienda de Maquillaje Strap Beauty",
-    img: "/Projects/diseniotienda.png",
-    url: "https://www.figma.com/proto/xVyedYJIi7kC4qkh2UBBSd/STRAP-BEAUTY?node-id=1-220&node-type=canvas&t=tNwBtg3Qs8ZGlF7m-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+      "Diseño de pagina web para la comercialización de productos agricolas",
+    img: "/Projects/agro.png",
+    url: "https://www.figma.com/proto/52BL2lDE0Rz0tFnONJgeKL/Untitled?node-id=47-108&t=XY1EhdaKwVoDZPCD-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
     tags: [
       Tags.Figma,
     ],
@@ -110,7 +100,7 @@ const proyectos = [
   },
 
   {
-    title: "Diseño de Pagina web Keffyx",
+    title: "Diseño de Pagina web empresa de desarrollo",
     description:
       "Diseño de la pagina web para la empresa de desarrollo Keffyx",
     img: "/Projects/diseniofigma.png",
@@ -121,6 +111,17 @@ const proyectos = [
    
   },
 
+  {
+    title: "Diseño de Pagina web para Tienda de Maquillaje",
+    description:
+      "Diseño de la pagina web para la Tienda de Maquillaje Strap Beauty",
+    img: "/Projects/diseniotienda.png",
+    url: "https://www.figma.com/proto/xVyedYJIi7kC4qkh2UBBSd/STRAP-BEAUTY?node-id=1-220&node-type=canvas&t=tNwBtg3Qs8ZGlF7m-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
+    tags: [
+      Tags.Figma,
+    ],
+   
+  },
   {
     title: "Dashboard para el Plan de Mejoramiento y Seguimiento",
     description:
@@ -134,17 +135,24 @@ const proyectos = [
    
   },
 
+  
+
+  
+
+  
+
 ];
 ---
 
 <div class="flex flex-col gap-y-16">
   {
-    proyectos.map(({ img, title, description, tags, url, github }) => (
+    /*para usar git debo agregarlo despues de url linea 133 para poner enlazar git con el proyecto */
+    proyectos.map(({ img, title, description, tags, url }) => (
       <article class="flex flex-col space-x-0 space-y-8 group md:flex-row md:space-x-8 md:space-y-0">
         <div class="w-full md:w-1/2">
           <div class="relative flex flex-col items-center col-span-6 row-span-5 gap-8 transition duration-500 ease-in-out transform shadow-xl overflow-clip rounded-xl sm:rounded-xl md:group-hover:-translate-y-1 md:group-hover:shadow-2xl lg:border lg:border-gray-800 lg:hover:border-gray-700 lg:hover:bg-gray-800/50">
             <img
-              alt=""
+              alt="Recién llegado vs 5 años en Nueva Zelanda"
               class="object-cover object-top w-full h-56 transition duration-500 sm:h-full md:scale-110 md:group-hover:scale-105"
               loading="lazy"
               src={img}
@@ -173,12 +181,12 @@ const proyectos = [
               {description}
             </div>
             <footer class="flex items-end justify-start mt-4 gap-x-4">
-              {github && (
+              {/*github && (
                 <LinkButton href={github}>
                   <Github class="size-6" />
                   Code
                 </LinkButton>
-              )}
+              )*/}
               {url && (
                 <LinkButton href={url}>
                   <Link class="size-4" />
