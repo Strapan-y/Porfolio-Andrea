@@ -10,10 +10,11 @@ import Sparql from "./Icons/Sparql.astro";
 import Github from "./Icons/Github.astro";
 import Link from "./Icons/Link.astro";
 import LinkButton from "./LinkButton.astro";
-import Canva from "./Icons/Canva.astro"
-import Figma from "./Icons/Figma.astro"
+import Canva from "./Icons/Canva.astro";
+import Figma from "./Icons/Figma.astro";
 import PowerBi from "./Icons/Power_Bi.astro";
 import Excel from "./Icons/Excel.astro";
+import Angular from "./Icons/Angular.astro";
 
 const Tags = {
   Css: {
@@ -72,18 +73,22 @@ const Tags = {
     icon: Figma,
   },
 
-  Excel:{
+  Excel: {
     name: "Excel",
     class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
     icon: Excel,
   },
 
-  PowerBi:{
+  PowerBi: {
     name: "Excel",
     class: "bg-[#fffff]  text-black dark:text-blue-400 border border-blue-400",
     icon: PowerBi,
-  }
-
+  },
+  Angular: {
+    name: "Angular",
+    class: "bg-[#fffff]  text-black dark:text-blue-300 border border-blue-300",
+    icon: Angular,
+  },
 };
 
 const proyectos = [
@@ -93,22 +98,22 @@ const proyectos = [
       "Diseño de pagina web para la comercialización de productos agricolas",
     img: "/Projects/agro.png",
     url: "https://www.figma.com/proto/52BL2lDE0Rz0tFnONJgeKL/Untitled?node-id=47-108&t=XY1EhdaKwVoDZPCD-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
-    tags: [
-      Tags.Figma,
-    ],
-   
+    tags: [Tags.Figma],
+  },
+  {
+    title: "Pagina web de productos en Angular",
+    description: "Pagina web sencilla tipo catalogo para productos digitales con la opcion de cambio de tema",
+    img: "/Projects/web-productos.png",
+    url: " https://web-productos.vercel.app/",
+    tags: [Tags.Angular],
   },
 
   {
     title: "Diseño de Pagina web empresa de desarrollo",
-    description:
-      "Diseño de la pagina web para la empresa de desarrollo Keffyx",
+    description: "Diseño de la pagina web para la empresa de desarrollo Keffyx",
     img: "/Projects/diseniofigma.png",
     url: "https://www.figma.com/proto/G7BQFtePGPDAekdFJDMrsk/Untitled?node-id=3-4&node-type=canvas&t=AeCmHsWwQCWmZUEx-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1",
-    tags: [
-      Tags.Figma,
-    ],
-   
+    tags: [Tags.Figma],
   },
 
   {
@@ -117,10 +122,7 @@ const proyectos = [
       "Diseño de la pagina web para la Tienda de Maquillaje Strap Beauty",
     img: "/Projects/diseniotienda.png",
     url: "https://www.figma.com/proto/xVyedYJIi7kC4qkh2UBBSd/STRAP-BEAUTY?node-id=1-220&node-type=canvas&t=tNwBtg3Qs8ZGlF7m-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1",
-    tags: [
-      Tags.Figma,
-    ],
-   
+    tags: [Tags.Figma],
   },
   {
     title: "Dashboard para el Plan de Mejoramiento y Seguimiento",
@@ -128,19 +130,8 @@ const proyectos = [
       "Informe de seguimiento en el plan de Mejoramiento y Seguimiento de los grupos de Investigación",
     img: "/Projects/planmejoramiento.png",
     url: "https://app.powerbi.com/links/4lkzUIy3o_?ctid=64ebc78e-0a5f-44e1-a504-5713eff64b33&pbi_source=linkShare",
-    tags: [
-      Tags.PowerBi,
-      Tags.Excel,
-    ],
-   
+    tags: [Tags.PowerBi, Tags.Excel],
   },
-
-  
-
-  
-
-  
-
 ];
 ---
 
@@ -189,7 +180,7 @@ const proyectos = [
               )*/}
               {url && (
                 <LinkButton href={url}>
-                  <Link class="size-4" />
+                  <Link tag.icon />
                   Preview
                 </LinkButton>
               )}
@@ -199,3 +190,4 @@ const proyectos = [
       </article>
     ))
   }
+</div>
